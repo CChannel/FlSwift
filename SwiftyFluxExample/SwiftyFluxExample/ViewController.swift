@@ -26,7 +26,8 @@ final class ViewController: UIViewController {
         NumberActionCreator.shared.dispatcher.dispatch(.increase(1))
     }
     
-    @IBAction private func  minusButtonTapped(_ sender: Any) {        NumberActionCreator.shared.dispatcher.dispatch(.decrease(1))
+    @IBAction private func  minusButtonTapped(_ sender: Any) {
+        NumberActionCreator.shared.dispatcher.dispatch(.decrease(1))
     }
     
     private let disposeBag = DisposeBag()
