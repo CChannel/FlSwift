@@ -1,5 +1,7 @@
 # SwiftyFlux
-Flux for Swift
+- [Flux](https://facebook.github.io/flux/) is the application architecture that Facebook uses for building client-side web applications.
+- SwiftyFlux is Flux like architecture library written in Swift.
+
 
 ## Requirements
 - Xcode 10.3
