@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED3A285B237E618D00CDF2A8 /* SwiftyFlux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A2851237E618D00CDF2A8 /* SwiftyFlux.framework */; };
+		ED3A285B237E618D00CDF2A8 /* Swifty_Flux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A2851237E618D00CDF2A8 /* Swifty_Flux.framework */; };
 		ED3A2860237E618D00CDF2A8 /* SwiftyFlux_StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A285F237E618D00CDF2A8 /* SwiftyFlux_StoreTests.swift */; };
-		ED3A2862237E618D00CDF2A8 /* SwiftyFlux.h in Headers */ = {isa = PBXBuildFile; fileRef = ED3A2854237E618D00CDF2A8 /* SwiftyFlux.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED3A2862237E618D00CDF2A8 /* Swifty-Flux.h in Headers */ = {isa = PBXBuildFile; fileRef = ED3A2854237E618D00CDF2A8 /* Swifty-Flux.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED3A286C237E61F100CDF2A8 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A286B237E61F100CDF2A8 /* Action.swift */; };
 		ED3A286E237E620D00CDF2A8 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A286D237E620D00CDF2A8 /* Dispatcher.swift */; };
 		ED3A2870237E622D00CDF2A8 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A286F237E622D00CDF2A8 /* State.swift */; };
@@ -28,10 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		ED3A2851237E618D00CDF2A8 /* SwiftyFlux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyFlux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED3A2854237E618D00CDF2A8 /* SwiftyFlux.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyFlux.h; sourceTree = "<group>"; };
+		ED3A2851237E618D00CDF2A8 /* Swifty_Flux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swifty_Flux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3A2854237E618D00CDF2A8 /* Swifty-Flux.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swifty-Flux.h"; sourceTree = "<group>"; };
 		ED3A2855237E618D00CDF2A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED3A285A237E618D00CDF2A8 /* SwiftyFluxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyFluxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3A285A237E618D00CDF2A8 /* Swifty_FluxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swifty_FluxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3A285F237E618D00CDF2A8 /* SwiftyFlux_StoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyFlux_StoreTests.swift; sourceTree = "<group>"; };
 		ED3A2861237E618D00CDF2A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED3A286B237E61F100CDF2A8 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED3A285B237E618D00CDF2A8 /* SwiftyFlux.framework in Frameworks */,
+				ED3A285B237E618D00CDF2A8 /* Swifty_Flux.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,8 +63,8 @@
 		ED3A2847237E618D00CDF2A8 = {
 			isa = PBXGroup;
 			children = (
-				ED3A2853237E618D00CDF2A8 /* SwiftyFlux */,
-				ED3A285E237E618D00CDF2A8 /* SwiftyFluxTests */,
+				ED3A2853237E618D00CDF2A8 /* Swifty_Flux */,
+				ED3A285E237E618D00CDF2A8 /* Swifty_FluxTests */,
 				ED3A2852237E618D00CDF2A8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,16 +72,16 @@
 		ED3A2852237E618D00CDF2A8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED3A2851237E618D00CDF2A8 /* SwiftyFlux.framework */,
-				ED3A285A237E618D00CDF2A8 /* SwiftyFluxTests.xctest */,
+				ED3A2851237E618D00CDF2A8 /* Swifty_Flux.framework */,
+				ED3A285A237E618D00CDF2A8 /* Swifty_FluxTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ED3A2853237E618D00CDF2A8 /* SwiftyFlux */ = {
+		ED3A2853237E618D00CDF2A8 /* Swifty_Flux */ = {
 			isa = PBXGroup;
 			children = (
-				ED3A2854237E618D00CDF2A8 /* SwiftyFlux.h */,
+				ED3A2854237E618D00CDF2A8 /* Swifty-Flux.h */,
 				ED3A2873237E625E00CDF2A8 /* MiddlewareType.swift */,
 				ED3A2855237E618D00CDF2A8 /* Info.plist */,
 				ED3A286B237E61F100CDF2A8 /* Action.swift */,
@@ -89,16 +89,16 @@
 				ED3A286F237E622D00CDF2A8 /* State.swift */,
 				ED3A2871237E624200CDF2A8 /* Store.swift */,
 			);
-			path = SwiftyFlux;
+			path = Swifty_Flux;
 			sourceTree = "<group>";
 		};
-		ED3A285E237E618D00CDF2A8 /* SwiftyFluxTests */ = {
+		ED3A285E237E618D00CDF2A8 /* Swifty_FluxTests */ = {
 			isa = PBXGroup;
 			children = (
 				ED3A285F237E618D00CDF2A8 /* SwiftyFlux_StoreTests.swift */,
 				ED3A2861237E618D00CDF2A8 /* Info.plist */,
 			);
-			path = SwiftyFluxTests;
+			path = Swifty_FluxTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,16 +108,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED3A2862237E618D00CDF2A8 /* SwiftyFlux.h in Headers */,
+				ED3A2862237E618D00CDF2A8 /* Swifty-Flux.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		ED3A2850237E618D00CDF2A8 /* SwiftyFlux */ = {
+		ED3A2850237E618D00CDF2A8 /* Swifty_Flux */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED3A2865237E618D00CDF2A8 /* Build configuration list for PBXNativeTarget "SwiftyFlux" */;
+			buildConfigurationList = ED3A2865237E618D00CDF2A8 /* Build configuration list for PBXNativeTarget "Swifty_Flux" */;
 			buildPhases = (
 				ED3A284C237E618D00CDF2A8 /* Headers */,
 				ED3A284D237E618D00CDF2A8 /* Sources */,
@@ -128,14 +128,14 @@
 			);
 			dependencies = (
 			);
-			name = SwiftyFlux;
+			name = Swifty_Flux;
 			productName = SwiftyFlux;
-			productReference = ED3A2851237E618D00CDF2A8 /* SwiftyFlux.framework */;
+			productReference = ED3A2851237E618D00CDF2A8 /* Swifty_Flux.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		ED3A2859237E618D00CDF2A8 /* SwiftyFluxTests */ = {
+		ED3A2859237E618D00CDF2A8 /* Swifty_FluxTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED3A2868237E618D00CDF2A8 /* Build configuration list for PBXNativeTarget "SwiftyFluxTests" */;
+			buildConfigurationList = ED3A2868237E618D00CDF2A8 /* Build configuration list for PBXNativeTarget "Swifty_FluxTests" */;
 			buildPhases = (
 				ED3A2856237E618D00CDF2A8 /* Sources */,
 				ED3A2857237E618D00CDF2A8 /* Frameworks */,
@@ -146,9 +146,9 @@
 			dependencies = (
 				ED3A285D237E618D00CDF2A8 /* PBXTargetDependency */,
 			);
-			name = SwiftyFluxTests;
+			name = Swifty_FluxTests;
 			productName = SwiftyFluxTests;
-			productReference = ED3A285A237E618D00CDF2A8 /* SwiftyFluxTests.xctest */;
+			productReference = ED3A285A237E618D00CDF2A8 /* Swifty_FluxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -170,7 +170,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ED3A284B237E618D00CDF2A8 /* Build configuration list for PBXProject "SwiftyFlux" */;
+			buildConfigurationList = ED3A284B237E618D00CDF2A8 /* Build configuration list for PBXProject "Swifty_Flux" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -182,8 +182,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ED3A2850237E618D00CDF2A8 /* SwiftyFlux */,
-				ED3A2859237E618D00CDF2A8 /* SwiftyFluxTests */,
+				ED3A2850237E618D00CDF2A8 /* Swifty_Flux */,
+				ED3A2859237E618D00CDF2A8 /* Swifty_FluxTests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,7 +231,7 @@
 /* Begin PBXTargetDependency section */
 		ED3A285D237E618D00CDF2A8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ED3A2850237E618D00CDF2A8 /* SwiftyFlux */;
+			target = ED3A2850237E618D00CDF2A8 /* Swifty_Flux */;
 			targetProxy = ED3A285C237E618D00CDF2A8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -370,7 +370,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftyFlux/Info.plist;
+				INFOPLIST_FILE = Swifty_Flux/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -378,7 +378,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tv.mysta.SwiftyFlux;
+				PRODUCT_BUNDLE_IDENTIFIER = "tv.mysta.Swifty-Flux";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -399,7 +399,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftyFlux/Info.plist;
+				INFOPLIST_FILE = Swifty_Flux/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -407,7 +407,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tv.mysta.SwiftyFlux;
+				PRODUCT_BUNDLE_IDENTIFIER = "tv.mysta.Swifty-Flux";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -422,13 +422,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6RVFM6A7B5;
-				INFOPLIST_FILE = SwiftyFluxTests/Info.plist;
+				INFOPLIST_FILE = Swifty_FluxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tv.mysta.SwiftyFluxTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "tv.mysta.Swifty-FluxTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,13 +441,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6RVFM6A7B5;
-				INFOPLIST_FILE = SwiftyFluxTests/Info.plist;
+				INFOPLIST_FILE = Swifty_FluxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tv.mysta.SwiftyFluxTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "tv.mysta.Swifty-FluxTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,7 +457,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ED3A284B237E618D00CDF2A8 /* Build configuration list for PBXProject "SwiftyFlux" */ = {
+		ED3A284B237E618D00CDF2A8 /* Build configuration list for PBXProject "Swifty_Flux" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED3A2863237E618D00CDF2A8 /* Debug */,
@@ -466,7 +466,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED3A2865237E618D00CDF2A8 /* Build configuration list for PBXNativeTarget "SwiftyFlux" */ = {
+		ED3A2865237E618D00CDF2A8 /* Build configuration list for PBXNativeTarget "Swifty_Flux" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED3A2866237E618D00CDF2A8 /* Debug */,
@@ -475,7 +475,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED3A2868237E618D00CDF2A8 /* Build configuration list for PBXNativeTarget "SwiftyFluxTests" */ = {
+		ED3A2868237E618D00CDF2A8 /* Build configuration list for PBXNativeTarget "Swifty_FluxTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED3A2869237E618D00CDF2A8 /* Debug */,

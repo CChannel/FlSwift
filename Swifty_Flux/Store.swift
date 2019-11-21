@@ -1,6 +1,6 @@
 //
 //  Store.swift
-//  SwiftyFlux
+//  Swifty_Flux
 //
 //  Created by Takuya Osawa on 2019/11/15.
 //  Copyright © 2019 Takuya Osawa. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class Store<StateType: SwiftyFlux.State> {
+open class Store<StateType: Swifty_Flux.State> {
     // MARK: - public
     public let state: StateType
     public func subscribe() {

@@ -17,9 +17,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ED3A2859237E618D00CDF2A8"
-               BuildableName = "SwiftyFluxTests.xctest"
-               BlueprintName = "SwiftyFluxTests"
-               ReferencedContainer = "container:SwiftyFlux.xcodeproj">
+               BuildableName = "Swifty_FluxTests.xctest"
+               BlueprintName = "Swifty_FluxTests"
+               ReferencedContainer = "container:Swifty_Flux.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

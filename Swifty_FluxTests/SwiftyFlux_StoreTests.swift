@@ -1,15 +1,15 @@
 //
-//  SwiftyFlux_StoreTests.swift
-//  SwiftyFluxTests
+//  Swifty_Flux_StoreTests.swift
+//  Swifty_FluxTests
 //
 //  Created by Takuya Osawa on 2019/11/15.
 //  Copyright © 2019 Takuya Osawa. All rights reserved.
 //
 
 import XCTest
-@testable import SwiftyFlux
+@testable import Swifty_Flux
 
-class SwiftyFlux_StoreTests: XCTestCase {
+class Swifty_Flux_StoreTests: XCTestCase {
     private enum TestAction: Action {
         case increase(Int)
         case decrease(Int)
@@ -23,7 +23,7 @@ class SwiftyFlux_StoreTests: XCTestCase {
     
     private class TestState: State {
         typealias ActionType = TestAction
-        func reduce(action: SwiftyFlux_StoreTests.TestAction) {
+        func reduce(action: Swifty_Flux_StoreTests.TestAction) {
             switch action {
             case .increase(let _value):
                 self.value += _value
