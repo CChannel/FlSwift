@@ -34,5 +34,15 @@ git "git@github.com:CChannel/Swifty_Flux.git"
 $ carthage update
 ```
 
+### [Swift Package Manager](https://github.com/apple/swift-package-manager)
+Add this to Package.swift
+```
+dependencies: [
+    .package(url: "https://github.com/CChannel/Swifty_Flux.git", from: "0.0.1")
+]
+```
+```sh
+$ swift build
+```
 ## License
 Swifty_Flux is released under the MIT license. See LICENSE for details.
