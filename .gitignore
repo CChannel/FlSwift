@@ -22,3 +22,6 @@ vendor
 
 Carthage/Checkouts
 Carthage/Build
+
+Packages/
+.build/
