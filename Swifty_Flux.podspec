@@ -5,6 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/CChannel/Swifty_Flux"
   s.license      = "MIT"
   s.source       = { :git => "https://github.com/CChannel/Swifty_Flux.git", :tag => "#{s.version}" }
+  s.author       = { "t-osawa-009" => "da87435@gmail.com" }
   s.source_files = "Swifty_Flux/*.swift"
   s.ios.deployment_target = '10.0'
   s.requires_arc = true
