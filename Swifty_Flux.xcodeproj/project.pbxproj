@@ -63,8 +63,8 @@
 		ED3A2847237E618D00CDF2A8 = {
 			isa = PBXGroup;
 			children = (
-				ED3A2853237E618D00CDF2A8 /* Swifty_Flux */,
-				ED3A285E237E618D00CDF2A8 /* Swifty_FluxTests */,
+				ED3A2853237E618D00CDF2A8 /* Source */,
+				ED3A285E237E618D00CDF2A8 /* Tests */,
 				ED3A2852237E618D00CDF2A8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,7 +78,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ED3A2853237E618D00CDF2A8 /* Swifty_Flux */ = {
+		ED3A2853237E618D00CDF2A8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				ED3A2854237E618D00CDF2A8 /* Swifty-Flux.h */,
@@ -89,16 +89,16 @@
 				ED3A286F237E622D00CDF2A8 /* State.swift */,
 				ED3A2871237E624200CDF2A8 /* Store.swift */,
 			);
-			path = Swifty_Flux;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		ED3A285E237E618D00CDF2A8 /* Swifty_FluxTests */ = {
+		ED3A285E237E618D00CDF2A8 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				ED3A285F237E618D00CDF2A8 /* SwiftyFlux_StoreTests.swift */,
 				ED3A2861237E618D00CDF2A8 /* Info.plist */,
 			);
-			path = Swifty_FluxTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
