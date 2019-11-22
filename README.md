@@ -9,6 +9,21 @@
 - Swift 5.0
 
 ## Installation
+### [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html)
+
+Add the pod Swifty_Flux
+```
+# Podfile
+use_frameworks!
+
+target 'YOUR_TARGET_NAME' do
+    pod 'Swifty_Flux'
+end
+```
+```sh
+$ pod install
+```
+
 ### [Carthage](https://github.com/Carthage/Carthage)
 
 Add this to Cartfile
