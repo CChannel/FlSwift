@@ -33,3 +33,6 @@ git "git@github.com:CChannel/Swifty_Flux.git"
 ```sh
 $ carthage update
 ```
+
+## License
+Swifty_Flux is released under the MIT license. See LICENSE for details.
