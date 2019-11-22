@@ -37,7 +37,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		ED17CE86237E9FEC00A57017 /* SwiftyFluxExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyFluxExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED17CE86237E9FEC00A57017 /* Swifty_FluxExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifty_FluxExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED17CE89237E9FEC00A57017 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED17CE8D237E9FEC00A57017 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED17CE90237E9FEC00A57017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		ED17CE7D237E9FEC00A57017 = {
 			isa = PBXGroup;
 			children = (
-				ED17CE88237E9FEC00A57017 /* SwiftyFluxExample */,
+				ED17CE88237E9FEC00A57017 /* Swifty_FluxExample */,
 				ED17CE87237E9FEC00A57017 /* Products */,
 				ED17CE9F237EA37E00A57017 /* Frameworks */,
 			);
@@ -77,12 +77,12 @@
 		ED17CE87237E9FEC00A57017 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED17CE86237E9FEC00A57017 /* SwiftyFluxExample.app */,
+				ED17CE86237E9FEC00A57017 /* Swifty_FluxExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ED17CE88237E9FEC00A57017 /* SwiftyFluxExample */ = {
+		ED17CE88237E9FEC00A57017 /* Swifty_FluxExample */ = {
 			isa = PBXGroup;
 			children = (
 				ED17CE89237E9FEC00A57017 /* AppDelegate.swift */,
@@ -94,7 +94,7 @@
 				ED17CE9D237EA2B300A57017 /* input.xcfilelist */,
 				ED17CE9E237EA33A00A57017 /* output.xcfilelist */,
 			);
-			path = SwiftyFluxExample;
+			path = Swifty_FluxExample;
 			sourceTree = "<group>";
 		};
 		ED17CE9F237EA37E00A57017 /* Frameworks */ = {
@@ -110,9 +110,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ED17CE85237E9FEC00A57017 /* SwiftyFluxExample */ = {
+		ED17CE85237E9FEC00A57017 /* Swifty_FluxExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED17CE9A237E9FED00A57017 /* Build configuration list for PBXNativeTarget "SwiftyFluxExample" */;
+			buildConfigurationList = ED17CE9A237E9FED00A57017 /* Build configuration list for PBXNativeTarget "Swifty_FluxExample" */;
 			buildPhases = (
 				ED17CE82237E9FEC00A57017 /* Sources */,
 				ED17CE83237E9FEC00A57017 /* Frameworks */,
@@ -124,9 +124,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftyFluxExample;
+			name = Swifty_FluxExample;
 			productName = SwiftyFluxExample;
-			productReference = ED17CE86237E9FEC00A57017 /* SwiftyFluxExample.app */;
+			productReference = ED17CE86237E9FEC00A57017 /* Swifty_FluxExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -144,7 +144,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ED17CE81237E9FEC00A57017 /* Build configuration list for PBXProject "SwiftyFluxExample" */;
+			buildConfigurationList = ED17CE81237E9FEC00A57017 /* Build configuration list for PBXProject "Swifty_FluxExample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -157,7 +157,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ED17CE85237E9FEC00A57017 /* SwiftyFluxExample */,
+				ED17CE85237E9FEC00A57017 /* Swifty_FluxExample */,
 			);
 		};
 /* End PBXProject section */
@@ -182,13 +182,13 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"$(SRCROOT)/SwiftyFluxExample/input.xcfilelist",
+				"$(SRCROOT)/Swifty_FluxExample/input.xcfilelist",
 			);
 			inputPaths = (
 			);
 			name = carthage;
 			outputFileListPaths = (
-				"$(SRCROOT)/SwiftyFluxExample/output.xcfilelist",
+				"$(SRCROOT)/Swifty_FluxExample/output.xcfilelist",
 			);
 			outputPaths = (
 			);
@@ -354,13 +354,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = SwiftyFluxExample/Info.plist;
+				INFOPLIST_FILE = Swifty_FluxExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tv.mysta.SwiftyFluxExample;
+				PRODUCT_BUNDLE_IDENTIFIER = "tv.mysta.Swifty-FluxExample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -378,13 +378,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = SwiftyFluxExample/Info.plist;
+				INFOPLIST_FILE = Swifty_FluxExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tv.mysta.SwiftyFluxExample;
+				PRODUCT_BUNDLE_IDENTIFIER = "tv.mysta.Swifty-FluxExample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -395,7 +395,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ED17CE81237E9FEC00A57017 /* Build configuration list for PBXProject "SwiftyFluxExample" */ = {
+		ED17CE81237E9FEC00A57017 /* Build configuration list for PBXProject "Swifty_FluxExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED17CE98237E9FED00A57017 /* Debug */,
@@ -404,7 +404,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED17CE9A237E9FED00A57017 /* Build configuration list for PBXNativeTarget "SwiftyFluxExample" */ = {
+		ED17CE9A237E9FED00A57017 /* Build configuration list for PBXNativeTarget "Swifty_FluxExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED17CE9B237E9FED00A57017 /* Debug */,

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SwiftyFluxExample
+//  Swifty_FluxExample
 //
 //  Created by Takuya Osawa on 2019/11/15.
 //  Copyright © 2019 Takuya Osawa. All rights reserved.

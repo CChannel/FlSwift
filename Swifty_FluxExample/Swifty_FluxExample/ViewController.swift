@@ -1,13 +1,13 @@
 //
 //  ViewController.swift
-//  SwiftyFluxExample
+//  Swifty_FluxExample
 //
 //  Created by Takuya Osawa on 2019/11/15.
 //  Copyright © 2019 Takuya Osawa. All rights reserved.
 //
 
 import UIKit
-import SwiftyFlux
+import Swifty_Flux
 import RxSwift
 import RxCocoa
 
@@ -48,7 +48,7 @@ enum NumberAction: Action {
 class NumberActionCreator {
     static let shared = NumberActionCreator()
     private init() {}
-    let dispatcher = SwiftyFlux.Dispatcher<NumberAction>.shared
+    let dispatcher = Swifty_Flux.Dispatcher<NumberAction>.shared
 }
 
 class NumberState: State {
