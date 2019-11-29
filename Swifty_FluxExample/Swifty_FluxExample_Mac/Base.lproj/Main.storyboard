@@ -727,6 +727,9 @@
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="plusButtonTapped:" target="XfG-lQ-9wD" id="bIP-Lt-9mU"/>
+                                        </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8BU-eZ-oeJ">
                                         <rect key="frame" x="-5" y="-7" width="47" height="32"/>
@@ -734,6 +737,9 @@
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="minusButtonTapped:" target="XfG-lQ-9wD" id="S5f-jm-ZTV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <visibilityPriorities>
@@ -753,6 +759,9 @@
                             <constraint firstItem="4e1-47-fmS" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="T8Z-sb-st8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="cpE-fa-vsc" id="T2a-li-jUW"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
