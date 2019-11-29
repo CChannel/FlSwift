@@ -15,6 +15,9 @@
 		ED3A2870237E622D00CDF2A8 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A286F237E622D00CDF2A8 /* State.swift */; };
 		ED3A2872237E624200CDF2A8 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A2871237E624200CDF2A8 /* Store.swift */; };
 		ED3A2874237E625F00CDF2A8 /* MiddlewareType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A2873237E625E00CDF2A8 /* MiddlewareType.swift */; };
+		ED6D4DBF2390E7D4004BA6A0 /* UniversalFramework_Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = ED6D4DBC2390E7D4004BA6A0 /* UniversalFramework_Framework.xcconfig */; };
+		ED6D4DC02390E7D4004BA6A0 /* UniversalFramework_Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = ED6D4DBD2390E7D4004BA6A0 /* UniversalFramework_Base.xcconfig */; };
+		ED6D4DC12390E7D4004BA6A0 /* UniversalFramework_Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = ED6D4DBE2390E7D4004BA6A0 /* UniversalFramework_Test.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,9 @@
 		ED3A286F237E622D00CDF2A8 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		ED3A2871237E624200CDF2A8 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		ED3A2873237E625E00CDF2A8 /* MiddlewareType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddlewareType.swift; sourceTree = "<group>"; };
+		ED6D4DBC2390E7D4004BA6A0 /* UniversalFramework_Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = UniversalFramework_Framework.xcconfig; sourceTree = "<group>"; };
+		ED6D4DBD2390E7D4004BA6A0 /* UniversalFramework_Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = UniversalFramework_Base.xcconfig; sourceTree = "<group>"; };
+		ED6D4DBE2390E7D4004BA6A0 /* UniversalFramework_Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = UniversalFramework_Test.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 		ED3A2847237E618D00CDF2A8 = {
 			isa = PBXGroup;
 			children = (
+				ED6D4DBB2390E7D4004BA6A0 /* Configurations */,
 				ED3A2853237E618D00CDF2A8 /* Source */,
 				ED3A285E237E618D00CDF2A8 /* Tests */,
 				ED3A2852237E618D00CDF2A8 /* Products */,
@@ -99,6 +106,16 @@
 				ED3A2861237E618D00CDF2A8 /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		ED6D4DBB2390E7D4004BA6A0 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				ED6D4DBC2390E7D4004BA6A0 /* UniversalFramework_Framework.xcconfig */,
+				ED6D4DBD2390E7D4004BA6A0 /* UniversalFramework_Base.xcconfig */,
+				ED6D4DBE2390E7D4004BA6A0 /* UniversalFramework_Test.xcconfig */,
+			);
+			path = Configurations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +210,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6D4DC12390E7D4004BA6A0 /* UniversalFramework_Test.xcconfig in Resources */,
+				ED6D4DC02390E7D4004BA6A0 /* UniversalFramework_Base.xcconfig in Resources */,
+				ED6D4DBF2390E7D4004BA6A0 /* UniversalFramework_Framework.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +314,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos appletvos appletvsimulator watchsimulator watchos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -356,7 +376,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos appletvos appletvsimulator watchsimulator watchos";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -371,6 +391,7 @@
 		};
 		ED3A2866237E618D00CDF2A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED6D4DBC2390E7D4004BA6A0 /* UniversalFramework_Framework.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -404,6 +425,7 @@
 		};
 		ED3A2867237E618D00CDF2A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED6D4DBC2390E7D4004BA6A0 /* UniversalFramework_Framework.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -436,6 +458,7 @@
 		};
 		ED3A2869237E618D00CDF2A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED6D4DBE2390E7D4004BA6A0 /* UniversalFramework_Test.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -455,6 +478,7 @@
 		};
 		ED3A286A237E618D00CDF2A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED6D4DBE2390E7D4004BA6A0 /* UniversalFramework_Test.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
