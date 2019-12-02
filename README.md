@@ -8,6 +8,7 @@
 ## Usage
 
 ### Action
+- Action to handle value increase / decrease
 ```swift
 enum NumberAction: Action {
     case increase(Int)
@@ -15,8 +16,19 @@ enum NumberAction: Action {
 }
 
 ```
+### Dispatcher
+- Dipatcher to handle actions.
+- This sample defines dispatcher as ActionCreator
+```swift
+class NumberActionCreator {
+    static let shared = NumberActionCreator()
+    private init() {}
+    let dispatcher = Swifty_Flux.Dispatcher<NumberAction>.shared
+}
+```
 
 ### State
+- You can define the state of the app that handles increasing and decreasing values as follows.
 ```swift
 class NumberState: State {
     typealias ActionType = NumberAction
@@ -35,6 +47,8 @@ class NumberState: State {
 ```
 
 ### Store
+- Reflect the change in the value in the view.
+- This sample uses Rxswift to bind to the view
 ```swift
 final class ViewController: UIViewController {
     override func viewDidLoad() {
