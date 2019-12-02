@@ -4,7 +4,9 @@
 
 <img src="https://github.com/CChannel/Swifty_Flux/blob/master/assets/Flux_%20Figure.png" width = "360" title="Flux_%20Figure">
 
-## Action
+## Usage
+
+### Action
 ```swift
 enum NumberAction: Action {
     case increase(Int)
@@ -13,7 +15,7 @@ enum NumberAction: Action {
 
 ```
 
-## State
+### State
 ```swift
 class NumberState: State {
     typealias ActionType = NumberAction
@@ -31,7 +33,7 @@ class NumberState: State {
 }
 ```
 
-## Store
+### Store
 ```swift
 final class ViewController: UIViewController {
     override func viewDidLoad() {
