@@ -42,6 +42,19 @@
 		EDE22CDD2394BEA200A64FEA /* Swifty_Flux.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDE22CDB2394BEA200A64FEA /* Swifty_Flux.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EDE22CE02394BF8000A64FEA /* input.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = EDE22CDE2394BF8000A64FEA /* input.xcfilelist */; };
 		EDE22CE12394BF8000A64FEA /* output.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = EDE22CDF2394BF8000A64FEA /* output.xcfilelist */; };
+		EDE22CEA2394C42A00A64FEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE22CE92394C42A00A64FEA /* AppDelegate.swift */; };
+		EDE22CEC2394C42A00A64FEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE22CEB2394C42A00A64FEA /* ViewController.swift */; };
+		EDE22CEF2394C42A00A64FEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE22CED2394C42A00A64FEA /* Main.storyboard */; };
+		EDE22CF12394C42B00A64FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE22CF02394C42B00A64FEA /* Assets.xcassets */; };
+		EDE22CF42394C42B00A64FEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE22CF22394C42B00A64FEA /* LaunchScreen.storyboard */; };
+		EDE22CFC2394C57400A64FEA /* output.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = EDE22CFA2394C57400A64FEA /* output.xcfilelist */; };
+		EDE22CFD2394C57400A64FEA /* input.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = EDE22CFB2394C57400A64FEA /* input.xcfilelist */; };
+		EDE22D012394C59400A64FEA /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE22CFE2394C59400A64FEA /* RxSwift.framework */; };
+		EDE22D022394C59400A64FEA /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDE22CFE2394C59400A64FEA /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EDE22D032394C59400A64FEA /* Swifty_Flux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE22CFF2394C59400A64FEA /* Swifty_Flux.framework */; };
+		EDE22D042394C59400A64FEA /* Swifty_Flux.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDE22CFF2394C59400A64FEA /* Swifty_Flux.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EDE22D052394C59400A64FEA /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE22D002394C59400A64FEA /* RxCocoa.framework */; };
+		EDE22D062394C59400A64FEA /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDE22D002394C59400A64FEA /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EDEFCB422390F873000295A8 /* Swifty_Flux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6D4DD92390F3F8004BA6A0 /* Swifty_Flux.framework */; };
 		EDEFCB432390F873000295A8 /* Swifty_Flux.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED6D4DD92390F3F8004BA6A0 /* Swifty_Flux.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -125,6 +138,19 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDE22D072394C59400A64FEA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EDE22D062394C59400A64FEA /* RxCocoa.framework in Embed Frameworks */,
+				EDE22D022394C59400A64FEA /* RxSwift.framework in Embed Frameworks */,
+				EDE22D042394C59400A64FEA /* Swifty_Flux.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -170,6 +196,18 @@
 		EDE22CDB2394BEA200A64FEA /* Swifty_Flux.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swifty_Flux.framework; path = Carthage/Build/watchOS/Swifty_Flux.framework; sourceTree = "<group>"; };
 		EDE22CDE2394BF8000A64FEA /* input.xcfilelist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcfilelist; path = input.xcfilelist; sourceTree = "<group>"; };
 		EDE22CDF2394BF8000A64FEA /* output.xcfilelist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcfilelist; path = output.xcfilelist; sourceTree = "<group>"; };
+		EDE22CE72394C42A00A64FEA /* Swifty_FluxExample_tvos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifty_FluxExample_tvos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDE22CE92394C42A00A64FEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDE22CEB2394C42A00A64FEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDE22CEE2394C42A00A64FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDE22CF02394C42B00A64FEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDE22CF32394C42B00A64FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDE22CF52394C42B00A64FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDE22CFA2394C57400A64FEA /* output.xcfilelist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcfilelist; path = output.xcfilelist; sourceTree = "<group>"; };
+		EDE22CFB2394C57400A64FEA /* input.xcfilelist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcfilelist; path = input.xcfilelist; sourceTree = "<group>"; };
+		EDE22CFE2394C59400A64FEA /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/tvOS/RxSwift.framework; sourceTree = "<group>"; };
+		EDE22CFF2394C59400A64FEA /* Swifty_Flux.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swifty_Flux.framework; path = Carthage/Build/tvOS/Swifty_Flux.framework; sourceTree = "<group>"; };
+		EDE22D002394C59400A64FEA /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/tvOS/RxCocoa.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +241,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDE22CE42394C42A00A64FEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE22D052394C59400A64FEA /* RxCocoa.framework in Frameworks */,
+				EDE22D012394C59400A64FEA /* RxSwift.framework in Frameworks */,
+				EDE22D032394C59400A64FEA /* Swifty_Flux.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -213,6 +261,7 @@
 				ED466B7C238FD1E0004D50D6 /* Swifty_FluxExample_Mac */,
 				EDE22CAE2394BAEC00A64FEA /* Swifty_FluxExample_WatchOS */,
 				EDE22CBD2394BAED00A64FEA /* Swifty_FluxExample_WatchOS Extension */,
+				EDE22CE82394C42A00A64FEA /* Swifty_FluxExample_tvos */,
 				ED17CE87237E9FEC00A57017 /* Products */,
 				ED17CE9F237EA37E00A57017 /* Frameworks */,
 			);
@@ -225,6 +274,7 @@
 				ED466B7B238FD1E0004D50D6 /* Swifty_FluxExample_Mac.app */,
 				EDE22CAD2394BAEC00A64FEA /* Swifty_FluxExample_WatchOS.app */,
 				EDE22CB92394BAEC00A64FEA /* Swifty_FluxExample_WatchOS Extension.appex */,
+				EDE22CE72394C42A00A64FEA /* Swifty_FluxExample_tvos.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -249,8 +299,11 @@
 			children = (
 				EDE22CDB2394BEA200A64FEA /* Swifty_Flux.framework */,
 				EDE22CD52394BEA000A64FEA /* RxCocoa.framework */,
+				EDE22D002394C59400A64FEA /* RxCocoa.framework */,
 				EDE22CD42394BE9F00A64FEA /* RxSwift.framework */,
 				ED6D4DEC2390F5EB004BA6A0 /* Swifty_Flux.framework */,
+				EDE22CFE2394C59400A64FEA /* RxSwift.framework */,
+				EDE22CFF2394C59400A64FEA /* Swifty_Flux.framework */,
 				ED6D4DE92390F506004BA6A0 /* RxRelay.framework */,
 				ED6D4DE62390F4FE004BA6A0 /* RxBlocking.framework */,
 				ED17CEA1237EA37E00A57017 /* RxCocoa.framework */,
@@ -300,6 +353,21 @@
 				EDE22CC72394BAED00A64FEA /* PushNotificationPayload.apns */,
 			);
 			path = "Swifty_FluxExample_WatchOS Extension";
+			sourceTree = "<group>";
+		};
+		EDE22CE82394C42A00A64FEA /* Swifty_FluxExample_tvos */ = {
+			isa = PBXGroup;
+			children = (
+				EDE22CFB2394C57400A64FEA /* input.xcfilelist */,
+				EDE22CFA2394C57400A64FEA /* output.xcfilelist */,
+				EDE22CE92394C42A00A64FEA /* AppDelegate.swift */,
+				EDE22CEB2394C42A00A64FEA /* ViewController.swift */,
+				EDE22CED2394C42A00A64FEA /* Main.storyboard */,
+				EDE22CF02394C42B00A64FEA /* Assets.xcassets */,
+				EDE22CF22394C42B00A64FEA /* LaunchScreen.storyboard */,
+				EDE22CF52394C42B00A64FEA /* Info.plist */,
+			);
+			path = Swifty_FluxExample_tvos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,6 +449,25 @@
 			productReference = EDE22CB92394BAEC00A64FEA /* Swifty_FluxExample_WatchOS Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		EDE22CE62394C42A00A64FEA /* Swifty_FluxExample_tvos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDE22CF82394C42B00A64FEA /* Build configuration list for PBXNativeTarget "Swifty_FluxExample_tvos" */;
+			buildPhases = (
+				EDE22CE32394C42A00A64FEA /* Sources */,
+				EDE22CE42394C42A00A64FEA /* Frameworks */,
+				EDE22CE52394C42A00A64FEA /* Resources */,
+				EDE22CF92394C55000A64FEA /* carthage */,
+				EDE22D072394C59400A64FEA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swifty_FluxExample_tvos;
+			productName = Swifty_FluxExample_tvos;
+			productReference = EDE22CE72394C42A00A64FEA /* Swifty_FluxExample_tvos.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -403,6 +490,9 @@
 					EDE22CB82394BAEC00A64FEA = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
+					EDE22CE62394C42A00A64FEA = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
 				};
 			};
 			buildConfigurationList = ED17CE81237E9FEC00A57017 /* Build configuration list for PBXProject "Swifty_FluxExample" */;
@@ -422,6 +512,7 @@
 				ED466B7A238FD1E0004D50D6 /* Swifty_FluxExample_Mac */,
 				EDE22CAC2394BAEC00A64FEA /* Swifty_FluxExample_WatchOS */,
 				EDE22CB82394BAEC00A64FEA /* Swifty_FluxExample_WatchOS Extension */,
+				EDE22CE62394C42A00A64FEA /* Swifty_FluxExample_tvos */,
 			);
 		};
 /* End PBXProject section */
@@ -462,6 +553,18 @@
 				EDE22CE12394BF8000A64FEA /* output.xcfilelist in Resources */,
 				EDE22CC52394BAED00A64FEA /* Assets.xcassets in Resources */,
 				EDE22CE02394BF8000A64FEA /* input.xcfilelist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE22CE52394C42A00A64FEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE22CF42394C42B00A64FEA /* LaunchScreen.storyboard in Resources */,
+				EDE22CFD2394C57400A64FEA /* input.xcfilelist in Resources */,
+				EDE22CF12394C42B00A64FEA /* Assets.xcassets in Resources */,
+				EDE22CEF2394C42A00A64FEA /* Main.storyboard in Resources */,
+				EDE22CFC2394C57400A64FEA /* output.xcfilelist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +631,26 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
+		EDE22CF92394C55000A64FEA /* carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/Swifty_FluxExample_tvos/input.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = carthage;
+			outputFileListPaths = (
+				"$(SRCROOT)/Swifty_FluxExample_tvos/output.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -556,6 +679,15 @@
 				EDE22CC32394BAED00A64FEA /* NotificationController.swift in Sources */,
 				EDE22CC12394BAED00A64FEA /* ExtensionDelegate.swift in Sources */,
 				EDE22CBF2394BAED00A64FEA /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE22CE32394C42A00A64FEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE22CEC2394C42A00A64FEA /* ViewController.swift in Sources */,
+				EDE22CEA2394C42A00A64FEA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +737,22 @@
 				EDE22CB02394BAEC00A64FEA /* Base */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		EDE22CED2394C42A00A64FEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDE22CEE2394C42A00A64FEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDE22CF22394C42B00A64FEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDE22CF32394C42B00A64FEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -916,6 +1064,54 @@
 			};
 			name = Release;
 		};
+		EDE22CF62394C42B00A64FEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6RVFM6A7B5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = Swifty_FluxExample_tvos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tv.mysta.Swifty-FluxExample-tvos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.2;
+			};
+			name = Debug;
+		};
+		EDE22CF72394C42B00A64FEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6RVFM6A7B5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = Swifty_FluxExample_tvos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tv.mysta.Swifty-FluxExample-tvos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -960,6 +1156,15 @@
 			buildConfigurations = (
 				EDE22CCC2394BAED00A64FEA /* Debug */,
 				EDE22CCD2394BAED00A64FEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDE22CF82394C42B00A64FEA /* Build configuration list for PBXNativeTarget "Swifty_FluxExample_tvos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDE22CF62394C42B00A64FEA /* Debug */,
+				EDE22CF72394C42B00A64FEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
