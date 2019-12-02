@@ -107,7 +107,7 @@ $ swift build
 ## CONTRIBUTING
 There's still a lot of work to do here.
 We would love to see you involved.
-You can find all the details on how to get started in the Contributing Guide.
+You can find all the details on how to get started in the [Contributing Guide.](https://github.com/CChannel/Swifty_Flux/blob/master/CONTRIBUTING.md)
 
 ## License
 Swifty_Flux is released under the MIT license. See LICENSE for details.
