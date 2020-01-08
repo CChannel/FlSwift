@@ -1,2 +1,2 @@
 github "ReactiveX/RxSwift" ~> 5.0
-github "CChannel/Swifty_Flux" == 0.0.2
+github "CChannel/FlSwift" == 0.0.3
