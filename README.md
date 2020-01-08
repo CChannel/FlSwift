@@ -1,9 +1,9 @@
-# Swifty_Flux
+# FlSwift
 - [Flux](https://facebook.github.io/flux/) is the application architecture that Facebook uses for building client-side web applications.
-- Swifty_Flux is Flux like architecture library written in Swift.
+- FlSwift is Flux like architecture library written in Swift.
 - Using one-way data flow makes it easier to understand state management.
 
-<img src="https://github.com/CChannel/Swifty_Flux/blob/master/assets/Flux_%20Figure.png" width = "360" title="Flux_%20Figure">
+<img src="https://github.com/CChannel/FlSwift/blob/master/assets/Flux_%20Figure.png" width = "360" title="Flux_%20Figure">
 
 ## Usage
 
@@ -23,7 +23,7 @@ enum NumberAction: Action {
 class NumberActionCreator {
     static let shared = NumberActionCreator()
     private init() {}
-    let dispatcher = Swifty_Flux.Dispatcher<NumberAction>.shared
+    let dispatcher = FlSwift.Dispatcher<NumberAction>.shared
 }
 ```
 
@@ -87,13 +87,13 @@ final class ViewController: UIViewController {
 ## Installation
 ### [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html)
 
-Add the pod Swifty_Flux
+Add the pod FlSwift
 ```
 # Podfile
 use_frameworks!
 
 target 'YOUR_TARGET_NAME' do
-    pod 'Swifty_Flux'
+    pod 'FlSwift'
 end
 ```
 ```sh
@@ -104,7 +104,7 @@ $ pod install
 
 Add this to Cartfile
 ```
-git "git@github.com:CChannel/Swifty_Flux.git"
+git "git@github.com:CChannel/FlSwift.git"
 ```
 ```sh
 $ carthage update
@@ -114,7 +114,7 @@ $ carthage update
 Add this to Package.swift
 ```
 dependencies: [
-    .package(url: "https://github.com/CChannel/Swifty_Flux.git", from: "0.0.1")
+    .package(url: "https://github.com/CChannel/FlSwift.git", from: "0.0.1")
 ]
 ```
 ```sh
@@ -124,7 +124,7 @@ $ swift build
 ## CONTRIBUTING
 There's still a lot of work to do here.
 We would love to see you involved.
-You can find all the details on how to get started in the [Contributing Guide.](https://github.com/CChannel/Swifty_Flux/blob/master/CONTRIBUTING.md)
+You can find all the details on how to get started in the [Contributing Guide.](https://github.com/CChannel/FlSwift/blob/master/CONTRIBUTING.md)
 
 ## License
-Swifty_Flux is released under the MIT license. See LICENSE for details.
+FlSwift is released under the MIT license. See LICENSE for details.
