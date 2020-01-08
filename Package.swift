@@ -2,22 +2,22 @@
 import PackageDescription
 
 let package = Package(
-    name: "Swifty_Flux",
+    name: "FlSwift",
     platforms: [
         .iOS(.v10), .macOS(.v10_12), .tvOS(.v10), .watchOS(.v3)
     ],
     products: [
-        .library(name: "Swifty_Flux", targets: ["Swifty_Flux"]),
+        .library(name: "FlSwift", targets: ["FlSwift"]),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "Swifty_Flux",
+            name: "FlSwift",
             path: "Source"
         ),
         .testTarget(
-            name: "Swifty_FluxTests",
-            dependencies: ["Swifty_Flux"],
+            name: "FlSwiftTests",
+            dependencies: ["FlSwift"],
             path: "Tests"
         ),
     ],
