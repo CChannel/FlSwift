@@ -1,5 +1,0 @@
-$(SRCROOT)/Carthage/Build/Mac/RxBlocking.framework
-$(SRCROOT)/Carthage/Build/Mac/RxCocoa.framework
-$(SRCROOT)/Carthage/Build/Mac/RxRelay.framework
-$(SRCROOT)/Carthage/Build/Mac/RxSwift.framework
-$(SRCROOT)/Carthage/Build/Mac/Swifty_Flux.framework

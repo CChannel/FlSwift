@@ -1,0 +1,5 @@
+$(SRCROOT)/Carthage/Build/tvOS/RxBlocking.framework
+$(SRCROOT)/Carthage/Build/tvOS/RxCocoa.framework
+$(SRCROOT)/Carthage/Build/tvOS/RxRelay.framework
+$(SRCROOT)/Carthage/Build/tvOS/RxSwift.framework
+$(SRCROOT)/Carthage/Build/tvOS/FlSwift.framework

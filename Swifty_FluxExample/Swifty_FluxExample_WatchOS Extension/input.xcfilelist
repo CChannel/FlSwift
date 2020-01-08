@@ -1,5 +1,0 @@
-$(SRCROOT)/Carthage/Build/watchOS/RxBlocking.framework
-$(SRCROOT)/Carthage/Build/watchOS/RxCocoa.framework
-$(SRCROOT)/Carthage/Build/watchOS/RxRelay.framework
-$(SRCROOT)/Carthage/Build/watchOS/RxSwift.framework
-$(SRCROOT)/Carthage/Build/watchOS/Swifty_Flux.framework

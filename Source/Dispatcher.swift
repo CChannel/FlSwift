@@ -1,6 +1,6 @@
 //
 //  Dispatcher.swift
-//  Swifty_Flux
+//  FlSwift
 //
 //  Created by Takuya Osawa on 2019/11/15.
 //  Copyright © 2019 Takuya Osawa. All rights reserved.
@@ -21,7 +21,7 @@ private class GenericStatic {
     }
 }
 
-public final class Dispatcher<A: Swifty_Flux.Action> {
+public final class Dispatcher<A: FlSwift.Action> {
     // MARK: - public
     public static var shared: Dispatcher<A> {
         return GenericStatic.singleton(for: self) {
