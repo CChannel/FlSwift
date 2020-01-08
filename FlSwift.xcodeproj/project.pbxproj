@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED330CA723C5DBF600329E86 /* FlSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = ED3A2854237E618D00CDF2A8 /* FlSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED3A285B237E618D00CDF2A8 /* FlSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A2851237E618D00CDF2A8 /* FlSwift.framework */; };
 		ED3A2860237E618D00CDF2A8 /* FlSwift_StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A285F237E618D00CDF2A8 /* FlSwift_StoreTests.swift */; };
-		ED3A2862237E618D00CDF2A8 /* FlSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = ED3A2854237E618D00CDF2A8 /* FlSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED3A286C237E61F100CDF2A8 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A286B237E61F100CDF2A8 /* Action.swift */; };
 		ED3A286E237E620D00CDF2A8 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A286D237E620D00CDF2A8 /* Dispatcher.swift */; };
 		ED3A2870237E622D00CDF2A8 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A286F237E622D00CDF2A8 /* State.swift */; };
@@ -157,7 +157,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED3A2862237E618D00CDF2A8 /* FlSwift.h in Headers */,
+				ED330CA723C5DBF600329E86 /* FlSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

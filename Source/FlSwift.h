@@ -6,7 +6,7 @@
 //  Copyright © 2019 Takuya Osawa. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for FlSwift.
 FOUNDATION_EXPORT double FlSwiftVersionNumber;
