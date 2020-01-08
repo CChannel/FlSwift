@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Swifty_Flux"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Flux for Swift"
   s.homepage     = "https://github.com/CChannel/Swifty_Flux"
   s.license      = "MIT"
