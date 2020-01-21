@@ -37,6 +37,7 @@
 		ED6D4DDC2390F3F8004BA6A0 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6D4DD82390F3F8004BA6A0 /* RxSwift.framework */; };
 		ED6D4DDD2390F3F8004BA6A0 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED6D4DD82390F3F8004BA6A0 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EDAAA44623D69552002356BC /* WebLinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAA44523D69552002356BC /* WebLinking.swift */; };
+		EDAAA44823D69CBF002356BC /* WebLinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAA44523D69552002356BC /* WebLinking.swift */; };
 		EDE22CB32394BAEC00A64FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE22CB22394BAEC00A64FEA /* Assets.xcassets */; };
 		EDE22CBA2394BAEC00A64FEA /* FlSwiftExample_WatchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EDE22CB92394BAEC00A64FEA /* FlSwiftExample_WatchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EDE22CBF2394BAED00A64FEA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE22CBE2394BAED00A64FEA /* InterfaceController.swift */; };
@@ -692,6 +693,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED466B80238FD1E0004D50D6 /* ViewController.swift in Sources */,
+				EDAAA44823D69CBF002356BC /* WebLinking.swift in Sources */,
 				ED466B7E238FD1E0004D50D6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

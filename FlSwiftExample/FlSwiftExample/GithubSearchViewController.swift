@@ -54,8 +54,6 @@ final class GithubSearchViewController: UIViewController {
             }
         }).disposed(by: disposeBag)
         
-        
-        
         tableView.keyboardDismissMode = .onDrag
     }
     
