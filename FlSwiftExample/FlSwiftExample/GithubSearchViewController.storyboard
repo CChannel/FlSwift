@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vCW-g0-C6O">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Github Search View Controller-->
+        <scene sceneID="013-7s-t5z">
+            <objects>
+                <viewController id="vCW-g0-C6O" customClass="GithubSearchViewController" customModule="FlSwiftExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tNa-Lo-6hI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hlb-rA-tu7">
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="cAg-4M-OFI">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="rCc-DG-Ok8">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rCc-DG-Ok8" firstAttribute="centerY" secondItem="tNa-Lo-6hI" secondAttribute="centerY" id="46E-9X-EKs"/>
+                            <constraint firstItem="rCc-DG-Ok8" firstAttribute="centerX" secondItem="tNa-Lo-6hI" secondAttribute="centerX" id="DXW-m2-jc2"/>
+                            <constraint firstItem="B1J-l1-cch" firstAttribute="bottom" secondItem="hlb-rA-tu7" secondAttribute="bottom" id="GaX-2t-GyC"/>
+                            <constraint firstItem="cAg-4M-OFI" firstAttribute="leading" secondItem="B1J-l1-cch" secondAttribute="leading" id="LwH-Kb-Z2q"/>
+                            <constraint firstItem="cAg-4M-OFI" firstAttribute="top" secondItem="B1J-l1-cch" secondAttribute="top" id="N8B-ks-miF"/>
+                            <constraint firstItem="hlb-rA-tu7" firstAttribute="leading" secondItem="B1J-l1-cch" secondAttribute="leading" id="PN2-5I-rZZ"/>
+                            <constraint firstItem="B1J-l1-cch" firstAttribute="trailing" secondItem="hlb-rA-tu7" secondAttribute="trailing" id="X4y-kc-0QB"/>
+                            <constraint firstItem="hlb-rA-tu7" firstAttribute="top" secondItem="cAg-4M-OFI" secondAttribute="bottom" id="nVB-el-7Pz"/>
+                            <constraint firstAttribute="trailing" secondItem="cAg-4M-OFI" secondAttribute="trailing" id="qxE-hr-XVE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B1J-l1-cch"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="rCc-DG-Ok8" id="RO3-jX-fys"/>
+                        <outlet property="searchBar" destination="cAg-4M-OFI" id="xuO-gF-1Pm"/>
+                        <outlet property="tableView" destination="hlb-rA-tu7" id="mXS-fH-LLB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bWz-zX-cYa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49.275362318840585" y="30.803571428571427"/>
+        </scene>
+    </scenes>
+</document>

@@ -25,6 +25,9 @@
 		ED330CB023C5E0A400329E86 /* FlSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED330CAE23C5E0A400329E86 /* FlSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ED330CB223C5E0B100329E86 /* FlSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED330CB123C5E0B100329E86 /* FlSwift.framework */; };
 		ED330CB323C5E0B100329E86 /* FlSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED330CB123C5E0B100329E86 /* FlSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ED330CB523C5E8D000329E86 /* GithubSearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED330CB423C5E8D000329E86 /* GithubSearchViewController.storyboard */; };
+		ED330CB723C5E92000329E86 /* GithubSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED330CB623C5E92000329E86 /* GithubSearchViewController.swift */; };
+		ED330CB923C5F47F00329E86 /* UIScrollView+reachedBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED330CB823C5F47F00329E86 /* UIScrollView+reachedBottom.swift */; };
 		ED466B7E238FD1E0004D50D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED466B7D238FD1E0004D50D6 /* AppDelegate.swift */; };
 		ED466B80238FD1E0004D50D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED466B7F238FD1E0004D50D6 /* ViewController.swift */; };
 		ED466B82238FD1E1004D50D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED466B81238FD1E1004D50D6 /* Assets.xcassets */; };
@@ -33,6 +36,7 @@
 		ED6D4DDB2390F3F8004BA6A0 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED6D4DD72390F3F8004BA6A0 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ED6D4DDC2390F3F8004BA6A0 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6D4DD82390F3F8004BA6A0 /* RxSwift.framework */; };
 		ED6D4DDD2390F3F8004BA6A0 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED6D4DD82390F3F8004BA6A0 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EDAAA44623D69552002356BC /* WebLinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAA44523D69552002356BC /* WebLinking.swift */; };
 		EDE22CB32394BAEC00A64FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE22CB22394BAEC00A64FEA /* Assets.xcassets */; };
 		EDE22CBA2394BAEC00A64FEA /* FlSwiftExample_WatchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EDE22CB92394BAEC00A64FEA /* FlSwiftExample_WatchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EDE22CBF2394BAED00A64FEA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE22CBE2394BAED00A64FEA /* InterfaceController.swift */; };
@@ -170,6 +174,9 @@
 		ED330CAB23C5E09600329E86 /* FlSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FlSwift.framework; path = Carthage/Build/Mac/FlSwift.framework; sourceTree = "<group>"; };
 		ED330CAE23C5E0A400329E86 /* FlSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FlSwift.framework; path = Carthage/Build/watchOS/FlSwift.framework; sourceTree = "<group>"; };
 		ED330CB123C5E0B100329E86 /* FlSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FlSwift.framework; path = Carthage/Build/tvOS/FlSwift.framework; sourceTree = "<group>"; };
+		ED330CB423C5E8D000329E86 /* GithubSearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GithubSearchViewController.storyboard; sourceTree = "<group>"; };
+		ED330CB623C5E92000329E86 /* GithubSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchViewController.swift; sourceTree = "<group>"; };
+		ED330CB823C5F47F00329E86 /* UIScrollView+reachedBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+reachedBottom.swift"; sourceTree = "<group>"; };
 		ED466B7B238FD1E0004D50D6 /* FlSwiftExample_Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlSwiftExample_Mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED466B7D238FD1E0004D50D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED466B7F238FD1E0004D50D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +191,7 @@
 		ED6D4DE62390F4FE004BA6A0 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/Mac/RxBlocking.framework; sourceTree = "<group>"; };
 		ED6D4DE92390F506004BA6A0 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/Mac/RxRelay.framework; sourceTree = "<group>"; };
 		ED6D4DEC2390F5EB004BA6A0 /* Swifty_Flux.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swifty_Flux.framework; path = Carthage/Build/iOS/Swifty_Flux.framework; sourceTree = "<group>"; };
+		EDAAA44523D69552002356BC /* WebLinking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebLinking.swift; sourceTree = "<group>"; };
 		EDE22CAD2394BAEC00A64FEA /* FlSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE22CB02394BAEC00A64FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		EDE22CB22394BAEC00A64FEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -288,12 +296,16 @@
 			children = (
 				ED17CE89237E9FEC00A57017 /* AppDelegate.swift */,
 				ED17CE8D237E9FEC00A57017 /* ViewController.swift */,
+				ED330CB423C5E8D000329E86 /* GithubSearchViewController.storyboard */,
+				ED330CB623C5E92000329E86 /* GithubSearchViewController.swift */,
 				ED17CE8F237E9FEC00A57017 /* Main.storyboard */,
 				ED17CE92237E9FED00A57017 /* Assets.xcassets */,
 				ED17CE94237E9FED00A57017 /* LaunchScreen.storyboard */,
 				ED17CE97237E9FED00A57017 /* Info.plist */,
 				ED17CE9D237EA2B300A57017 /* input.xcfilelist */,
 				ED17CE9E237EA33A00A57017 /* output.xcfilelist */,
+				ED330CB823C5F47F00329E86 /* UIScrollView+reachedBottom.swift */,
+				EDAAA44523D69552002356BC /* WebLinking.swift */,
 			);
 			path = FlSwiftExample;
 			sourceTree = "<group>";
@@ -530,6 +542,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED330CB523C5E8D000329E86 /* GithubSearchViewController.storyboard in Resources */,
 				ED17CE96237E9FED00A57017 /* LaunchScreen.storyboard in Resources */,
 				ED17CE93237E9FED00A57017 /* Assets.xcassets in Resources */,
 				ED17CE91237E9FEC00A57017 /* Main.storyboard in Resources */,
@@ -667,7 +680,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED17CE8E237E9FEC00A57017 /* ViewController.swift in Sources */,
+				ED330CB723C5E92000329E86 /* GithubSearchViewController.swift in Sources */,
+				ED330CB923C5F47F00329E86 /* UIScrollView+reachedBottom.swift in Sources */,
 				ED17CE8A237E9FEC00A57017 /* AppDelegate.swift in Sources */,
+				EDAAA44623D69552002356BC /* WebLinking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
