@@ -142,7 +142,7 @@ class NumberState: State {
         case .error(let _error):
             error.onNext(_error)
         case .responseRepositories(let _repositories, let _page, let _nextPages):
-            if page == 1 {
+            if _page == 1 {
                 repositories.accept(_repositories)
             } else {
                 repositories.accept(repositories.value + _repositories)
