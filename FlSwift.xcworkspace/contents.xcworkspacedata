@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/t.osawa/Desktop/SwiftyFlux/FlSwift.xcodeproj">
+      location = "group:FlSwift.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FlSwiftExample/FlSwiftExample.xcodeproj">
    </FileRef>
 </Workspace>
