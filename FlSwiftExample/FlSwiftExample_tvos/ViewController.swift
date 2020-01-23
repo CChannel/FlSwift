@@ -35,6 +35,18 @@ class ViewController: UIViewController {
         }
         .disposed(by: disposeBag)
         
+        store.state
+                  .isLoading
+                  .asDriver()
+                  .drive(onNext: { [weak self] (isLoading) in
+                      self?.activityIndicatorView.isHidden = !isLoading
+                      if isLoading {
+                          self?.activityIndicatorView.startAnimating()
+                      } else {
+                          self?.activityIndicatorView.stopAnimating()
+                      }
+                  }).disposed(by: disposeBag)
+        
         tableView.rx.reachedBottom().subscribe(onNext: { [weak self] (_) in
             guard let _self = self else { return }
             if let nextPages = _self.store.state.nextPages {
@@ -44,6 +56,7 @@ class ViewController: UIViewController {
     }
     
     // MARK: - private
+    @IBOutlet private weak var activityIndicatorView: UIActivityIndicatorView!
     @IBOutlet private weak var textField: UITextField!
     @IBOutlet private weak var tableView: UITableView!
     private let disposeBag = DisposeBag()

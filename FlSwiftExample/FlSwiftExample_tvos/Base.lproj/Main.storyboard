@@ -19,29 +19,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="lka-ux-vVZ">
+                                <rect key="frame" x="0.0" y="60" width="1920" height="1020"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4JR-IB-Knx">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="46"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="I7V-NA-7AW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="lka-ux-vVZ">
-                                <rect key="frame" x="0.0" y="46" width="1920" height="1034"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="e5K-Fo-mxT">
+                                <rect key="frame" x="940" y="520" width="40" height="40"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="lka-ux-vVZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1ro-m2-2pf"/>
-                            <constraint firstItem="lka-ux-vVZ" firstAttribute="top" secondItem="4JR-IB-Knx" secondAttribute="bottom" id="49v-gI-Pyo"/>
                             <constraint firstItem="4JR-IB-Knx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4oX-Wh-CEV"/>
                             <constraint firstAttribute="bottom" secondItem="lka-ux-vVZ" secondAttribute="bottom" id="GrU-OL-HEh"/>
                             <constraint firstItem="4JR-IB-Knx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="J0s-wv-BHv"/>
+                            <constraint firstItem="e5K-Fo-mxT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W7H-Of-m7s"/>
                             <constraint firstAttribute="trailing" secondItem="4JR-IB-Knx" secondAttribute="trailing" id="ihh-9H-C57"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="top" secondItem="lka-ux-vVZ" secondAttribute="top" id="kZo-Oz-lbk"/>
+                            <constraint firstItem="e5K-Fo-mxT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n7j-n9-TeU"/>
                             <constraint firstAttribute="trailing" secondItem="lka-ux-vVZ" secondAttribute="trailing" id="uIf-XN-kbp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="e5K-Fo-mxT" id="whB-1R-90n"/>
                         <outlet property="tableView" destination="lka-ux-vVZ" id="B5X-Mg-xAd"/>
                         <outlet property="textField" destination="4JR-IB-Knx" id="ZKg-2t-61m"/>
                     </connections>
