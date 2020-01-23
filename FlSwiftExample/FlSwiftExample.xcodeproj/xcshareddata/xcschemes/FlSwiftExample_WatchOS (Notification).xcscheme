@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EDE22CB82394BAEC00A64FEA"
-               BuildableName = "FlSwiftExample_WatchOS Extension.appex"
-               BlueprintName = "FlSwiftExample_WatchOS Extension"
+               BlueprintIdentifier = "ED17CE85237E9FEC00A57017"
+               BuildableName = "FlSwiftExample.app"
+               BlueprintName = "FlSwiftExample"
                ReferencedContainer = "container:FlSwiftExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -59,12 +59,12 @@
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/FlSwiftExample_Watch Extension">
+         RemotePath = "/$(PRODUCT_NAME)">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EDE22CB82394BAEC00A64FEA"
-            BuildableName = "FlSwiftExample_WatchOS Extension.appex"
-            BlueprintName = "FlSwiftExample_WatchOS Extension"
+            BlueprintIdentifier = "EDE22CAC2394BAEC00A64FEA"
+            BuildableName = "FlSwiftExample.app"
+            BlueprintName = "FlSwiftExample_WatchOS"
             ReferencedContainer = "container:FlSwiftExample.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
@@ -80,22 +80,22 @@
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/Swifty_FluxExample">
+         RemotePath = "/$(PRODUCT_NAME)">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EDE22CAC2394BAEC00A64FEA"
-            BuildableName = "Swifty_FluxExample_WatchOS.app"
-            BlueprintName = "Swifty_FluxExample_WatchOS"
-            ReferencedContainer = "container:Swifty_FluxExample.xcodeproj">
+            BuildableName = "FlSwiftExample.app"
+            BlueprintName = "FlSwiftExample_WatchOS"
+            ReferencedContainer = "container:FlSwiftExample.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EDE22CAC2394BAEC00A64FEA"
-            BuildableName = "Swifty_FluxExample_WatchOS.app"
-            BlueprintName = "Swifty_FluxExample_WatchOS"
-            ReferencedContainer = "container:Swifty_FluxExample.xcodeproj">
+            BuildableName = "FlSwiftExample.app"
+            BlueprintName = "FlSwiftExample_WatchOS"
+            ReferencedContainer = "container:FlSwiftExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

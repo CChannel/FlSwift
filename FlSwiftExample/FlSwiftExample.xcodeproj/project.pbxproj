@@ -40,9 +40,10 @@
 		EDAAA44823D69CBF002356BC /* WebLinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAA44523D69552002356BC /* WebLinking.swift */; };
 		EDBC476023D92CD600F92090 /* WebLinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAA44523D69552002356BC /* WebLinking.swift */; };
 		EDBC476223D92EC400F92090 /* UIScrollView+reachedBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED330CB823C5F47F00329E86 /* UIScrollView+reachedBottom.swift */; };
+		EDBC476323D9371C00F92090 /* WebLinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAA44523D69552002356BC /* WebLinking.swift */; };
+		EDBC476423D93BFD00F92090 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE22CBE2394BAED00A64FEA /* InterfaceController.swift */; };
 		EDE22CB32394BAEC00A64FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE22CB22394BAEC00A64FEA /* Assets.xcassets */; };
 		EDE22CBA2394BAEC00A64FEA /* FlSwiftExample_WatchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EDE22CB92394BAEC00A64FEA /* FlSwiftExample_WatchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		EDE22CBF2394BAED00A64FEA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE22CBE2394BAED00A64FEA /* InterfaceController.swift */; };
 		EDE22CC12394BAED00A64FEA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE22CC02394BAED00A64FEA /* ExtensionDelegate.swift */; };
 		EDE22CC32394BAED00A64FEA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE22CC22394BAED00A64FEA /* NotificationController.swift */; };
 		EDE22CC52394BAED00A64FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE22CC42394BAED00A64FEA /* Assets.xcassets */; };
@@ -705,8 +706,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDE22CC32394BAED00A64FEA /* NotificationController.swift in Sources */,
+				EDBC476423D93BFD00F92090 /* InterfaceController.swift in Sources */,
+				EDBC476323D9371C00F92090 /* WebLinking.swift in Sources */,
 				EDE22CC12394BAED00A64FEA /* ExtensionDelegate.swift in Sources */,
-				EDE22CBF2394BAED00A64FEA /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

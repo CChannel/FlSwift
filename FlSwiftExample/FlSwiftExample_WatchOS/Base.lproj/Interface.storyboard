@@ -1,32 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15505" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Swifty_FluxExample_WatchOS_Extension">
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="FlSwiftExample_WatchOS_Extension">
                     <items>
-                        <label width="130" height="27" alignment="left" text="0" textAlignment="center" id="tlX-jX-VWL"/>
-                        <button width="1" alignment="left" title="+" id="UoW-Sx-CuF">
-                            <connections>
-                                <action selector="plusButtonTapped:" destination="AgC-eL-Hgc" id="o8m-xe-DNZ"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" title="-" id="C3g-P2-gzQ">
-                            <connections>
-                                <action selector="minusButtonTapped:" destination="AgC-eL-Hgc" id="ZqM-ZN-Qjd"/>
-                            </connections>
-                        </button>
+                        <label alignment="left" text="Label" textAlignment="center" id="Lyk-lT-lfH"/>
+                        <table alignment="left" id="H6Y-up-9Kk">
+                            <items>
+                                <tableRow selectable="NO" id="4em-37-0Ox" customClass="Cell" customModule="FlSwiftExample_WatchOS_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="8ey-fS-BfS">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" textAlignment="center" numberOfLines="0" minimumScaleFactor="0.40000000000000002" id="jXO-Ww-uVA"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="jXO-Ww-uVA" id="cQu-2f-7l3"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
                     </items>
                     <connections>
-                        <outlet property="label" destination="tlX-jX-VWL" id="ZAC-UK-rdc"/>
-                        <outlet property="minusButton" destination="C3g-P2-gzQ" id="uth-hR-1CA"/>
-                        <outlet property="plusButton" destination="UoW-Sx-CuF" id="HZa-cH-FSX"/>
+                        <outlet property="label" destination="Lyk-lT-lfH" id="pSG-0e-TC9"/>
+                        <outlet property="table" destination="H6Y-up-9Kk" id="6lY-3W-7Ds"/>
                     </connections>
                 </controller>
             </objects>
@@ -52,14 +55,14 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Swifty_FluxExample_Watch" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="FlSwiftExample" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Swifty_FluxExample_Watch" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="FlSwiftExample" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="345"/>
         </scene>
