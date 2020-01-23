@@ -38,6 +38,8 @@
 		ED6D4DDD2390F3F8004BA6A0 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED6D4DD82390F3F8004BA6A0 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EDAAA44623D69552002356BC /* WebLinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAA44523D69552002356BC /* WebLinking.swift */; };
 		EDAAA44823D69CBF002356BC /* WebLinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAA44523D69552002356BC /* WebLinking.swift */; };
+		EDBC476023D92CD600F92090 /* WebLinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAA44523D69552002356BC /* WebLinking.swift */; };
+		EDBC476223D92EC400F92090 /* UIScrollView+reachedBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED330CB823C5F47F00329E86 /* UIScrollView+reachedBottom.swift */; };
 		EDE22CB32394BAEC00A64FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE22CB22394BAEC00A64FEA /* Assets.xcassets */; };
 		EDE22CBA2394BAEC00A64FEA /* FlSwiftExample_WatchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EDE22CB92394BAEC00A64FEA /* FlSwiftExample_WatchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EDE22CBF2394BAED00A64FEA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE22CBE2394BAED00A64FEA /* InterfaceController.swift */; };
@@ -714,6 +716,8 @@
 			files = (
 				EDE22CEC2394C42A00A64FEA /* ViewController.swift in Sources */,
 				EDE22CEA2394C42A00A64FEA /* AppDelegate.swift in Sources */,
+				EDBC476223D92EC400F92090 /* UIScrollView+reachedBottom.swift in Sources */,
+				EDBC476023D92CD600F92090 /* WebLinking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

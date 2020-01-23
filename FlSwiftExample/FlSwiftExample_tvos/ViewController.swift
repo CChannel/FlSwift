@@ -15,23 +15,37 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+        textField.rx
+            .text
+            .subscribe(onNext: { (text) in
+                guard let text = text, !text.isEmpty else {
+                    return
+                }
+                NumberActionCreator.shared.fetchRepositories(query: text, page: 1)
+            }).disposed(by: disposeBag)
         
-        store.state.number
-            .asObservable()
-            .map({ String($0) })
-            .bind(to: label.rx.text)
-            .disposed(by: disposeBag)
+        store.state
+            .repositories
+            .bind(to: tableView.rx.items) { tableView, row, element in
+                let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell")!
+                cell.textLabel?.text = element
+                cell.textLabel?.numberOfLines = 0
+                return cell
+        }
+        .disposed(by: disposeBag)
+        
+        tableView.rx.reachedBottom().subscribe(onNext: { [weak self] (_) in
+            guard let _self = self else { return }
+            if let nextPages = _self.store.state.nextPages {
+                NumberActionCreator.shared.fetchRepositories(query: _self.textField.text ?? "", page: nextPages)
+            }
+        }).disposed(by: disposeBag)
     }
     
-    @IBAction private func plusButtonTapped(_ sender: Any) {
-        NumberActionCreator.shared.dispatcher.dispatch(.increase(1))
-    }
-    
-    @IBAction private func  minusButtonTapped(_ sender: Any) {
-        NumberActionCreator.shared.dispatcher.dispatch(.decrease(1))
-    }
     // MARK: - private
-    @IBOutlet private weak var label: UILabel!
+    @IBOutlet private weak var textField: UITextField!
+    @IBOutlet private weak var tableView: UITableView!
     private let disposeBag = DisposeBag()
     private lazy var store: Store<NumberState> = {
         let state = NumberState()
@@ -42,14 +56,68 @@ class ViewController: UIViewController {
 }
 
 enum NumberAction: Action {
-    case increase(Int)
-    case decrease(Int)
+    case responseRepositories([String], Int, Int?)
+    case error(Error)
+    case isLoading(Bool)
 }
 
 class NumberActionCreator {
     static let shared = NumberActionCreator()
     private init() {}
     let dispatcher = FlSwift.Dispatcher<NumberAction>.shared
+    
+    func fetchRepositories(query: String, page: Int) {
+        dispatcher.dispatch(.isLoading(true))
+        var urlComponents = URLComponents(string: "https://api.github.com/search/repositories")!
+        
+        urlComponents.queryItems = [
+            URLQueryItem(name: "q", value: query),
+            URLQueryItem(name: "page", value: page.description)
+        ]
+        
+        let request = URLRequest(url: urlComponents.url!)
+        let task = URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
+            self?.dispatcher.dispatch(.isLoading(false))
+            if let error = error {
+                self?.dispatcher.dispatch(.error(error))
+                return
+            }
+            
+            guard let data = data, let response = response else {
+                return
+            }
+            
+            do {
+                guard let dictionary = try JSONSerialization.jsonObject(with: data) as? [String: Any] else {
+                    return
+                }
+                /// https://github.com/tryswift/RxPagination/blob/master/Pagination/PaginationRequest.swift
+                let elements = dictionary["items"] as? [[String: Any]]
+                
+                var _nextPage: Int?
+                if let urlResponse = response as? HTTPURLResponse {
+                    let nextURI = urlResponse.findLink(relation: "next")?.uri
+                    let queryItems = nextURI.flatMap(URLComponents.init)?.queryItems
+                    _nextPage = queryItems?
+                        .filter { $0.name == "page" }
+                        .compactMap { $0.value }
+                        .compactMap { Int($0) }
+                        .first
+                }
+                var full_names: [String] = []
+                elements?.forEach({ (dic) in
+                    if let full_name = dic["full_name"] as? String {
+                        full_names.append(full_name)
+                    }
+                })
+                self?.dispatcher.dispatch(.responseRepositories(full_names, page, _nextPage))
+            } catch {
+                self?.dispatcher.dispatch(.error(error))
+            }
+        }
+        
+        task.resume()
+    }
 }
 
 class NumberState: State {
@@ -57,12 +125,25 @@ class NumberState: State {
     
     func reduce(action: NumberAction) {
         switch action {
-        case .increase(let value):
-            number.accept(number.value + value)
-        case .decrease(let value):
-            number.accept(number.value - value)
+        case .error(let _error):
+            error.onNext(_error)
+        case .responseRepositories(let _repositories, let _page, let _nextPages):
+            if _page == 1 {
+                repositories.accept(_repositories)
+            } else {
+                repositories.accept(repositories.value + _repositories)
+            }
+            
+            page = _page
+            nextPages = _nextPages
+        case .isLoading(let _isLoading):
+            isLoading.accept(_isLoading)
         }
     }
     
-    var number =  BehaviorRelay<Int>(value: 0)
+    var page = 1
+    var nextPages: Int?
+    var repositories = BehaviorRelay<[String]>(value: [])
+    var error = PublishSubject<Error>()
+    var isLoading = BehaviorRelay<Bool>(value: false)
 }

@@ -5,7 +5,7 @@
 //  Created by Anton Nazarov on 09/05/2019.
 //  Copyright © 2019 RxSwift Community. All rights reserved.
 //
-#if os(iOS)
+#if os(iOS) || os(tvOS)
 import UIKit
 import RxSwift
 import RxCocoa
