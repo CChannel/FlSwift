@@ -1,4 +1,4 @@
-## Contributing to Swifty_Flux
+## Contributing to FlSwift
 - Feel free to collaborate with ideas, issues and  pull requests.
 
 1. Fork it
